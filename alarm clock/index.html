@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Alarm Clock</h1>
+        <div class="clock" id="clock"></div>
+        <div class="alarm-settings">
+            <label for="alarmTime">Set Alarm Time:</label>
+            <input type="time" id="alarmTime">
+
+            <label for="alarmTone">Choose Alarm Tone:</label>
+            <select id="alarmTone">
+                <option value="tone1.mp3">Tone 1</option>
+                <option value="tone2.mp3">Tone 2</option>
+                <option value="tone3.mp3">Tone 3</option>
+            </select>
+            
+            <label for="alarmDescription">Alarm Description (Optional):</label>
+            <textarea id="alarmDescription" placeholder="Enter a description..."></textarea>
+            
+            <button onclick="setAlarm()">Add Alarm</button>
+        </div>
+
+        <h2>Active Alarms</h2>
+        <ul id="alarmList"></ul>
+    </div>
+
+    <div class="snooze-dismiss" id="snoozeDismiss">
+        <p>Alarm is ringing!</p>
+        <button onclick="snoozeAlarm()">Snooze</button>
+        <button onclick="dismissAlarm()">Dismiss</button>
+    </div>
+
+    <audio id="alarmSound"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
