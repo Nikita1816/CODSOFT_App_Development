@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote of the Day</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>✨ Quote of the Day ✨</h1>
+
+        <!-- Quote Bubble Slider -->
+        <div class="quote-slider">
+            <div class="quote-bubble active">
+                <p class="quote-text">"Believe in yourself!"</p>
+                <span class="quote-author">- Anonymous</span>
+            </div>
+            <div class="quote-bubble">
+                <p class="quote-text">"Dream big and dare to fail."</p>
+                <span class="quote-author">- Norman Vaughan</span>
+            </div>
+            <div class="quote-bubble">
+                <p class="quote-text">"The only way to do great work is to love what you do."</p>
+                <span class="quote-author">- Steve Jobs</span>
+            </div>
+            <div class="quote-bubble">
+                <p class="quote-text">"Success is not final, failure is not fatal: it is the courage to continue that counts."</p>
+                <span class="quote-author">- Winston Churchill</span>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="buttons">
+            <button id="prev-quote">⬅️ Previous</button>
+            <button id="next-quote">➡️ Next</button>
+        </div>
+
+        <button id="favorite-quote">❤️ Save Favorite</button>
+        <button id="share-quote">📤 Share</button>
+
+        <h2>📌 Your Favorite Quotes</h2>
+        <ul id="favorites-list"></ul>
+    </div>
+</body>
+</html>
