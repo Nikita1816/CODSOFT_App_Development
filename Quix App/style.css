@@ -1,0 +1,78 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fffc4b, #ff7003);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Quiz Container */
+.quiz-container {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Question Box */
+.question-box {
+    background: #f4d340;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Options */
+.options-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    background: #00bfff;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.option:hover {
+    background: #0c0028;
+}
+
+/* Next Button */
+.controls {
+    margin-top: 15px;
+}
+
+#next-btn {
+    background: #ff4081;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#next-btn:hover {
+    background: #e73370;
+}
+
+/* Result Text */
+#result {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
